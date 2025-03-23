@@ -9,7 +9,7 @@ class RhymersDemo {
         RhymersFactory factory = new DefaultRhymersFactory();
         
         DefaultCountingOutRhymer[] rhymers = { factory.GetStandardRhymer(), factory.GetFalseRhymer(),
-                factory.GetFIFORhymer(), factory.GetHanoiRhymer()};
+                factory.GetFifoRhymer(), factory.GetHanoiRhymer()};
         
         for (int i = 1; i < 15; i++)
             for (int j = 0; j < 3; j++)
