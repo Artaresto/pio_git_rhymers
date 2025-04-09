@@ -6,7 +6,7 @@ public class DefaultCountingOutRhymer {
     private static final int MAX_CAP = 12;
     private static final int EMPTY_STACK = -1;
     private static final int LAST_ELEM = 11;
-    private int[] numbers = new int[MAX_CAP];
+    private final int[] numbers = new int[MAX_CAP];
     private static final int IVALID_STACK = -1;
     private int total = EMPTY_STACK;
 
@@ -22,7 +22,7 @@ public class DefaultCountingOutRhymer {
         return total == IVALID_STACK;
     }
 
-    private boolean isFull() {
+    public boolean isFull() {
 
         return total == LAST_ELEM;
 

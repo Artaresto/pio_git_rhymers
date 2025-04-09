@@ -74,5 +74,5 @@ public class RhymersJUnitTest {
         result = rhymer.countOut();
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
     }
-
+//5 of 5 tests passed
 }
