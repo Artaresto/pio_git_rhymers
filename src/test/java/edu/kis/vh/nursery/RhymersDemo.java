@@ -3,16 +3,33 @@ package edu.kis.vh.nursery;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.RhymersFactory;
 
+
+    /**
+     * Klasa demonstracyjna służąca do testowania działania różnych implementacji
+     * klasy {@link DefaultCountingOutRhymer} za pomocą wzorca.
+     */
 class RhymersDemo {
-
+    /**
+     * Maksymalna liczba elementów, które zostaną dodane do każdego z liczników.
+     */
     private static final int MAXIMAL_COUNT = 15;
-
+    /**
+            * @param args argumenty wejściowe
+     */
     public static void main(String[] args) {
         RhymersFactory factory = new DefaultRhymersFactory();
 
         testRhymers(factory);
 
     }
+
+    /**
+     * Metoda testująca działanie różnych implementacji liczników.
+     * Dodaje wartości do liczników, wypisuje ich zawartość oraz liczbę odrzuconych
+     * wartości w przypadku HanoiRhymer.
+     *
+     * @param factory instancja która dostarcza różne implementacje liczników
+     */
 
     private static void testRhymers(RhymersFactory factory) {
         DefaultCountingOutRhymer[] rhymers = { factory.GetStandardRhymer(), factory.GetFalseRhymer(),
